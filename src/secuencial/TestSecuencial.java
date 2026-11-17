@@ -10,7 +10,7 @@ public class TestSecuencial {
 
         long fin = System.nanoTime();
 
-        System.out.println("Secuencial -> suma = " + sumaTotal + " | tiempo = " + (fin - inicio) + " ns");
+        System.out.println("Secuencial suma = " + sumaTotal + " | tiempo = " + (fin - inicio) + " ns");
         return sumaTotal;
     }
 }
