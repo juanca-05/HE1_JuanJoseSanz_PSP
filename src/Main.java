@@ -2,6 +2,7 @@ import runnable.TestRunnable;
 import secuencial.TestSecuencial;
 import thread.TestThread;
 import utilidades.CreadorDeNotas;
+import pool.TestPool;
 
 public class Main {
 
@@ -19,6 +20,9 @@ public class Main {
 
         int sumaRunnable = TestRunnable.test(cursoAnterior, cursoActual);
         comprobar(sumaRunnable, sumaCorrecta);
+
+        int sumaPool = TestPool.test(cursoAnterior, cursoActual);
+        comprobar(sumaPool, sumaCorrecta);
     }
 
     private static void comprobar(int suma, int sumaCorrecta) {

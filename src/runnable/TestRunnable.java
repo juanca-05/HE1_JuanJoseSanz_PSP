@@ -2,7 +2,7 @@ package runnable;
 
 
 public class TestRunnable {
-    public static int test(int[][] cursoAnterior, int [][] cursoActual){
+    public static int test(int[][] cursoAnterior, int[][] cursoActual) {
         long inicio = System.nanoTime();
 
         TareaSuma tareaAnterior = new TareaSuma(cursoAnterior);
@@ -17,7 +17,7 @@ public class TestRunnable {
         try {
             hiloAnterior.join();
             hiloActual.join();
-        }catch (InterruptedException e){
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
 

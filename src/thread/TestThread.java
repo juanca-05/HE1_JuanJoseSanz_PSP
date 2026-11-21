@@ -1,7 +1,7 @@
 package thread;
 
 public class TestThread {
-    public static int test(int[][] cursoAnterior, int[][] cursoActual){
+    public static int test(int[][] cursoAnterior, int[][] cursoActual) {
         long inicio = System.nanoTime();
 
         HiloSuma hiloAnterior = new HiloSuma(cursoAnterior);
@@ -20,7 +20,7 @@ public class TestThread {
         int sumaTotal = hiloAnterior.getResultadoSuma() + hiloActual.getResultadoSuma();
 
         long fin = System.nanoTime();
-        System.out.println("Thread suma = " + sumaTotal + " | tiempo = " + (fin - inicio) + " ns");
+        System.out.println("Thread     -> suma = " + sumaTotal + " | tiempo = " + (fin - inicio) + " ns");
 
         return sumaTotal;
 

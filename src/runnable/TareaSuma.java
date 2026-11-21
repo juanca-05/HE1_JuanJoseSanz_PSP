@@ -2,7 +2,7 @@ package runnable;
 
 import utilidades.SumadorDeNotas;
 
-public class TareaSuma implements Runnable{
+public class TareaSuma implements Runnable {
     private int[][] notas;
     private int resultadoSuma;
 
@@ -11,7 +11,7 @@ public class TareaSuma implements Runnable{
     }
 
     @Override
-    public void run(){
+    public void run() {
         resultadoSuma = SumadorDeNotas.sumar(notas);
     }
 

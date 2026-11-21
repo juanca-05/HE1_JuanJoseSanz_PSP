@@ -1,7 +1,8 @@
 package thread;
+
 import utilidades.*;
 
-public class HiloSuma extends Thread{
+public class HiloSuma extends Thread {
     private int[][] notas;
     private int resultadoSuma;
 
@@ -10,7 +11,7 @@ public class HiloSuma extends Thread{
     }
 
     @Override
-    public void run(){
+    public void run() {
         resultadoSuma = SumadorDeNotas.sumar(notas);
     }
 
